@@ -1,0 +1,18 @@
+.btn {
+	text-transform: capitalize;
+	display: inline-block;
+	padding: 10px 30px;
+	background: #0ef;
+	border-radius: 40px;
+	box-shadow: 0 0 10px #0ef;
+	font-size: 17px;
+	color: #323946;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+}
+
+.btn:hover {
+	box-shadow: none;
+}

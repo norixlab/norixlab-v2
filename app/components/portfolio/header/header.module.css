@@ -1,0 +1,88 @@
+.container {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: #1f242d;
+    color: #fff;
+    z-index: 55;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.menuList {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.listLink {
+    font-size: 17px;
+
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+.listLink:hover {
+    color: #0ef;
+}
+
+.activeLink {
+    color: #0ef;
+}
+
+.mobMenuBtn {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobMenuBtn {
+        display: block;
+    }
+
+    .menuList {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 30px 50px;
+        background: #1f242d;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 1s;
+    }
+
+
+    .menuActive {
+        right: 0;
+    }
+
+    .listLink {
+        font-size: 20px;
+        margin: 30px 0;
+    }
+}
