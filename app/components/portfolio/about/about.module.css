@@ -3,8 +3,9 @@
 	align-items: center;
 	/* background: $second-bg-color; */
 
-	padding-top: 80px;
+	/* padding-bottom: 80px; */
 	min-height: 100vh;
+	overflow: hidden;
 }
 
 .container {

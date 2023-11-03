@@ -1,0 +1,175 @@
+.contacts {
+
+
+	display: flex;
+	align-items: center;
+	/* background: $second-bg-color; */
+	color: #fff;
+	/* padding-bottom: 80px; */
+	min-height: 100vh;
+	overflow: hidden;
+	border-bottom: 1px solid #090032;
+}
+
+.inner {
+	margin-top: 40px;
+}
+
+.container {
+	max-width: 1300px;
+	margin-top: 50px;
+	padding: 0 20px;
+	margin: 0 auto;
+	z-index: 50;
+}
+
+.title {
+	margin-top: 40px;
+	font-size: 45px;
+	line-height: 1.2;
+	text-transform: capitalize;
+	margin-bottom: 100px;
+	text-align: center;
+
+}
+
+.title span {
+	color: #0ef;
+}
+
+
+
+/* input,
+textarea {
+	outline: none;
+	padding: 1.5rem;
+	/* font-family: "Poppins", sans-serif; 
+	font-size: 1.6rem;
+	color: #fff;
+	border: none;
+	border-radius: 0.8rem;
+	margin: 0.7rem 0;
+	background: #323946;
+	caret-color: #0ef;
+
+}
+
+textarea {
+	width: 100%;
+	min-height: 20rem;
+	margin-bottom: 2rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-style: italic;
+}
+
+.form {
+	max-width: 70rem;
+	margin: 1rem auto 3rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.inputBox {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+
+}
+
+.inputBox input {
+	width: 49%;
+} */
+.contactsCard {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 700px;
+}
+
+.cardItem {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 40px;
+}
+
+.cardLink,
+.icon {
+	cursor: pointer;
+	z-index: 50;
+	color: #9000ff;
+	transition: all .4s;
+}
+
+.icon:hover {
+	color: #0ef;
+	filter: drop-shadow(0 0 6px #0ef);
+	transform: scale(1.1);
+}
+
+.ringItem {
+	width: 170px;
+	height: 170px;
+	border: 0px solid #090032;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.ringItem:nth-child(1) {
+	border-bottom-width: 8px;
+	border-color: #9000ff;
+	-webkit-animation: ring-rotate-1 2s linear infinite;
+	animation: ring-rotate-1 2s linear infinite;
+}
+
+.ringItem:nth-child(2) {
+	border-right-width: 8px;
+	border-color: #00cafd;
+	-webkit-animation: ring-rotate-2 2s linear infinite;
+	animation: ring-rotate-2 2s linear infinite;
+}
+
+.ringItem:nth-child(3) {
+	border-top-width: 8px;
+	border-color: #004add;
+	-webkit-animation: ring-rotate-3 2s linear infinite;
+	animation: ring-rotate-3 2s linear infinite;
+}
+
+
+@keyframes ring-rotate-1 {
+	0% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@keyframes ring-rotate-2 {
+	0% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@keyframes ring-rotate-3 {
+	0% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}

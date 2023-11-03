@@ -70,15 +70,17 @@ const Hero = () => {
 
                         <Button title="My Resume" url="#" />
                     </motion.div>
-                    <Image
-                        className={styles.img}
-                        src="/assets/portfolio-me.png"
-                        alt="My photo"
-                        width={500}
-                        height={600}
-                        quality={75}
-                        priority={true}
-                    />
+                    
+                        <Image
+                            className={styles.img}
+                            src="/assets/portfolio-me2.png"
+                            alt="My photo"
+                            width={500}
+                            height={600}
+                            quality={75}
+                            priority={true}
+                        />
+                    
                 </div>
             </div>
         </section>

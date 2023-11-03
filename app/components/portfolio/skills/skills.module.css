@@ -1,0 +1,76 @@
+.services {
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	min-height: 100vh;
+	overflow: hidden;
+	color: #fff;
+}
+
+
+
+.container {
+	max-width: 1300px;
+	padding: 0 20px 30px;
+	margin: 0 auto;
+	z-index: 50;
+}
+
+.title {
+	padding-top: 40px;
+	font-size: 45px;
+	line-height: 1.2;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.title span {
+	color: #0ef;
+}
+
+
+
+.services h2 {
+	margin-bottom: 50px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 30px;
+	gap: 20px;
+}
+
+.servicesBox {
+	flex: 1 1 300px;
+	background: #1f242d;
+	padding: 30px 20px 40px;
+	border-radius: 20px;
+	text-align: center;
+	border: 2px solid #1f242d;
+	transition: all 0.3s ease-in-out;
+}
+
+.servicesBox:hover {
+	border-color: #0ef;
+	box-shadow: 0 0 10px #0ef;
+	/* // transform: scale(1.02); */
+}
+
+
+
+/* i {
+			font-size: 7rem;
+			color: $main-color;
+		} */
+
+.servicesBox h3 {
+	font-size: 26px;
+}
+
+.servicesBox p {
+	font-size: 16px;
+	margin: 10px 0 30px;
+}

@@ -3,12 +3,12 @@
 	align-items: center;
 	padding-top: 80px;
 	min-height: 100vh;
-
+	overflow: hidden;
 }
 
 .container {
 	max-width: 1300px;
-	padding: 0 20px;
+	padding: 0 20px 30px;
 	margin: 0 auto;
 	z-index: 50;
 }
@@ -84,7 +84,8 @@
 }
 
 .img {
-
+	position: relative;
+	top: -20px;
 	animation: floatImage 4s infinite ease-in-out;
 }
 
