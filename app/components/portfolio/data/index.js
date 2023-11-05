@@ -16,8 +16,8 @@ export const menuLinks = [
 	},
 	{
 		"id": 4,
-		"title": "Services",
-		"url": "#services"
+		"title": "Skills",
+		"url": "#skills"
 	},
 	{
 		"id": 5,
@@ -61,15 +61,17 @@ export const socialLinks = [
 export const projects = [
 	{
 		"id": 1,
-		"title": "Web Design",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, et?",
-		"imageUrl": "/assets/portfolio1.jpg",
-		"link": "#"
+		"title": "Restaurant Website",
+		"description": "Website for a restaurant in HTML, CSS, JS and a little bit of PHP.",
+		"alt": "Project Restaurant",
+		"imageUrl": "/assets/restaurant1.jpg",
+		"link": "https://armavircomplex.am"
 	},
 	{
 		"id": 2,
 		"title": "Web Design",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, et?",
+		"alt": "Project",
 		"imageUrl": "/assets/portfolio2.jpg",
 		"link": "#"
 	},
@@ -77,6 +79,7 @@ export const projects = [
 		"id": 3,
 		"title": "Web Design",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, et?",
+		"alt": "Project",
 		"imageUrl": "/assets/portfolio3.jpg",
 		"link": "#"
 	},
@@ -84,6 +87,7 @@ export const projects = [
 		"id": 4,
 		"title": "Web Design",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, et?",
+		"alt": "Project",
 		"imageUrl": "/assets/portfolio4.jpg",
 		"link": "#"
 	},
@@ -91,6 +95,7 @@ export const projects = [
 		"id": 5,
 		"title": "Web Design",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, et?",
+		"alt": "Project",
 		"imageUrl": "/assets/portfolio5.jpg",
 		"link": "#"
 	},
@@ -98,6 +103,7 @@ export const projects = [
 		"id": 6,
 		"title": "Web Design",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, et?",
+		"alt": "Project",
 		"imageUrl": "/assets/portfolio6.jpg",
 		"link": "#"
 	}

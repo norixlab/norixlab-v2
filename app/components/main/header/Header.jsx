@@ -17,7 +17,7 @@ const Header = () => {
             <div className={styles.wrapper}>
                 <div className={styles.logo}>
                     <Link href="/">
-                        <Image src="/logo.svg" width={90} height={90} />
+                        <Image src="/logo.svg" width={90} height={90} alt='Logo'/>
                     </Link>
                 </div>
                 <nav>

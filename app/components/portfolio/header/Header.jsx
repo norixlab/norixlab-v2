@@ -9,7 +9,7 @@ import { menuLinks } from '../data';
 import styles from './header.module.css';
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
-    const [activeSection, setActiveSection] = React.useState('Home');
+    const [activeSection, setActiveSection] = React.useState('');
 
     // const pathname = usePathname();
     return (

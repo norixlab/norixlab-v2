@@ -1,7 +1,9 @@
 .footer {
+	position: relative;
 	/* backdrop-filter: blur(12px); */
-	background: #000000;
-	z-index: 99999;
+	backdrop-filter: blur(5px);
+	z-index: 55;
+	border-top: 1px solid #090032;
 
 }
 

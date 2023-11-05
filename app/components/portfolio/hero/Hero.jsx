@@ -28,20 +28,20 @@ const Hero = () => {
         };
     }, []);
     return (
-        <section className={styles.home} id="home">
+        <motion.section initial="hidden"
+                        whileInView="visible"
+                         className={styles.home} id="home">
             <div className={styles.container}>
                 <div className={styles.inner}>
-                    <motion.div
+                    <motion.div variants={slideInFromTop(0.2, 2)}
                         className={styles.content}
-                        initial="hidden"
-                        animate="visible"
-                        variants={slideInFromTop(0.2, 1)}>
-                        <motion.p variants={slideInFromRight(0.2, 1)}>Hello, It's Me</motion.p>
-                        <motion.h1 variants={slideInFromLeft(0.2, 1)}>Sergey Taydakov</motion.h1>
+                        >
+                        <motion.p variants={slideInFromRight(0.2, 2)}>Hello, It&apos;s Me</motion.p>
+                        <motion.h1 variants={slideInFromLeft(0.2, 2)}>Sergey Taydakov</motion.h1>
                         <h3>
-                            And I'm a <span ref={el} />
+                            And I&apos;m a <span ref={el} />
                         </h3>
-                        <motion.p variants={slideInFromRight(0.2, 1)}>
+                        <motion.p variants={slideInFromRight(0.2, 2)}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
                             tempore necessitatibus officiis dolor voluptatibus eos adipisci et?
                         </motion.p>
@@ -70,7 +70,7 @@ const Hero = () => {
 
                         <Button title="My Resume" url="#" />
                     </motion.div>
-                    
+                    <motion.div variants={slideInFromRight(0.3,2)}>
                         <Image
                             className={styles.img}
                             src="/assets/portfolio-me2.png"
@@ -78,12 +78,12 @@ const Hero = () => {
                             width={500}
                             height={600}
                             quality={75}
-                            priority={true}
+                            
                         />
-                    
+                    </motion.div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

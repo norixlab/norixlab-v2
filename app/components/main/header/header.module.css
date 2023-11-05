@@ -56,6 +56,8 @@
 
 .socialIcon:hover {
     color: #0ef;
+    filter: drop-shadow(0 0 4px #0ef);
+    transform: scale(1.2);
 }
 
 .mobMenuBtn {
@@ -64,6 +66,10 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: 0;
+    }
+
     .mobMenuBtn {
         display: block;
     }

@@ -1,14 +1,15 @@
-
-.main{
+.main {
   width: 100%;
   height: 100%;
 }
+
 .container {
   max-width: 1400px;
   padding: 0 20px;
   margin: 0 auto;
-  
+
 }
+
 /* .videoBox{
 	position: relative;
 
@@ -28,10 +29,21 @@
   opacity: 0.7;
   z-index: 1;
 } */
-.starsCanv{
-	position: fixed;
-	inset: 0px;
-	width: 100%;
-	height: auto;
-	z-index: 20;
+.starsCanv {
+  position: fixed;
+  inset: 0px;
+  width: 100%;
+  height: auto;
+  z-index: 20;
+}
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #0ef;
+  transform-origin: 0%;
+  z-index: 60;
 }

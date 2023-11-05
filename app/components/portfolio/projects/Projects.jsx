@@ -10,16 +10,16 @@ import Image from 'next/image';
 
 const Projects = () => {
     return (
-        <section className={styles.projects} id="projects">
+        <motion.section initial="hidden" whileInView="visible" className={styles.projects} id="projects">
             <div className={styles.container}>
-                <motion.div initial="hidden" whileInView="visible" className={styles.inner}>
-                    <motion.h2 variants={slideInFromTop(0.2, 1)} className={styles.title}>
+                <motion.div  className={styles.inner}>
+                    <motion.h2 variants={slideInFromTop(0.2, 2)} className={styles.title}>
                         Lasted <span>Projects</span>
                     </motion.h2>
 
                     <div className={styles.wrapper}>
                         {projects.map((item) => (
-                            <motion.div
+                            <motion.div initial="hidden" whileInView="visible"
                                 key={item.id}
                                 className={styles.projectsBox}
                                 variants={slideInFromBottom(0.2, 2)}>
@@ -29,11 +29,12 @@ const Projects = () => {
                                     className={styles.img}
                                     width={410}
                                     height={270}
+                                    alt={item.alt}
                                 />
                                 <div className={styles.projectsLayer}>
                                     <h4>{item.title}</h4>
                                     <p>{item.description}</p>
-                                    <Link href={item.link} className={styles.projectLink}>
+                                    <Link href={item.link} target='_blank' className={styles.projectLink}>
                                         <BiLinkExternal />
                                         {/* <i className="bx bx-link-external"></i> */}
                                     </Link>
@@ -103,7 +104,7 @@ const Projects = () => {
                     </div>
                 </motion.div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

@@ -1,7 +1,8 @@
+
 import React from 'react';
 
 import Header from '../components/portfolio/header/Header';
-
+import Footer from '../components/portfolio/footer/Footer';
 
 export const metadata = {
     title: 'NorixLab | Portfolio',
@@ -9,11 +10,12 @@ export const metadata = {
 };
 
 const LayoutPortfolio = ({ children }) => {
+    
     return (
         <>
             <Header />
             {children}
-            
+            <Footer />
         </>
     );
 };

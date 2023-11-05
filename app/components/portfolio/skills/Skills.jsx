@@ -9,14 +9,14 @@ import Button from '../../button/Button';
 import styles from './skills.module.css';
 const Skills = () => {
     return (
-        <section className={styles.services} id="services">
+        <motion.section initial="hidden" whileInView="visible" className={styles.services} id="skills">
             <div className={styles.container}>
-                <motion.div initial="hidden" whileInView="visible" className={styles.inner}>
-                    <motion.h2 variants={slideInFromTop(0.2, 1.5)} className={styles.title}>
+                <motion.div className={styles.inner}>
+                    <motion.h2 variants={slideInFromTop(0.2, 2)} className={styles.title}>
                         Our <span>Services</span>
                     </motion.h2>
 
-                    <motion.div variants={slideInFromBottom(0.2, 1)} className={styles.wrapper}>
+                    <motion.div variants={slideInFromBottom(0.2, 2)} className={styles.wrapper}>
                         <div className={styles.servicesBox}>
                             <BiCodeAlt size={60} color="#0ef" />
                             {/* <i className='bx bx-code-alt'></i> */}
@@ -64,7 +64,7 @@ const Skills = () => {
                     </motion.div>
                 </motion.div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

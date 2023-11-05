@@ -11,7 +11,7 @@ const About = () => {
         	<section className={styles.about} id="about">
 		<div className={styles.container}>
 			<motion.div initial='hidden' whileInView='visible' className={styles.inner}>
-				 <motion.div variants={slideInFromLeft(0.3,1.5)}> 
+				 <motion.div variants={slideInFromLeft(0.2,2)}> 
 				
                   <Image
                         className={styles.img}
@@ -23,8 +23,8 @@ const About = () => {
                         priority={false}
                     />
 				 </motion.div> 
-				<motion.div variants={slideInFromRight(0.3, 1.5)} className={styles.content}>
-					<motion.h2 variants={slideInFromTop(0.3,1.5)} className={styles.title}>About <span>Me</span></motion.h2>
+				<motion.div variants={slideInFromRight(0.2, 2)} className={styles.content}>
+					<motion.h2 variants={slideInFromTop(0.2,2)} className={styles.title}>About <span>Me</span></motion.h2>
 					<h3>Frontend Developer!</h3>
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem est doloribus autem rem
 						officiis

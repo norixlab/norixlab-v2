@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { FaTelegramPlane, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { SlSocialVkontakte } from 'react-icons/sl';
 
 import { motion } from 'framer-motion';
 import { slideInFromTop, slideInFromBottom } from '../../../utils/motion';
@@ -10,15 +11,15 @@ import styles from './contacts.module.css';
 import Link from 'next/link';
 const Contacts = () => {
     return (
-        <section className={styles.contacts} id="contacts">
+        <motion.section initial="hidden" whileInView="visible" className={styles.contacts} id="contacts">
             <div className={styles.container}>
-                <motion.div initial="hidden" whileInView="visible" className={styles.inner}>
-                    <motion.h2 variants={slideInFromTop(0.2, 1)} className={styles.title}>
+                <motion.div  className={styles.inner}>
+                    <motion.h2 variants={slideInFromTop(0.3, 2)} className={styles.title}>
                         Contact <span>Me!</span>
                     </motion.h2>
                     <div className={styles.contactsCard}>
                         <motion.div
-                            variants={slideInFromBottom(0.2, 1)}
+                            variants={slideInFromBottom(0.3, 2)}
                             className={styles.cardItem}>
                             <div className={styles.ringItem}></div>
                             <div className={styles.ringItem}></div>
@@ -28,7 +29,7 @@ const Contacts = () => {
                             </Link>
                         </motion.div>
                         <motion.div
-                            variants={slideInFromBottom(0.3, 1)}
+                            variants={slideInFromBottom(0.5, 2)}
                             className={styles.cardItem}>
                             <div className={styles.ringItem}></div>
                             <div className={styles.ringItem}></div>
@@ -38,13 +39,23 @@ const Contacts = () => {
                             </Link>
                         </motion.div>
                         <motion.div
-                            variants={slideInFromBottom(0.4, 1)}
+                            variants={slideInFromBottom(0.7, 2)}
                             className={styles.cardItem}>
                             <div className={styles.ringItem}></div>
                             <div className={styles.ringItem}></div>
                             <div className={styles.ringItem}></div>
                             <Link href="#" className={styles.cardLink}>
                                 <FaInstagram size={50} className={styles.icon} />
+                            </Link>
+                        </motion.div>
+                        <motion.div
+                            variants={slideInFromBottom(0.9, 2)}
+                            className={styles.cardItem}>
+                            <div className={styles.ringItem}></div>
+                            <div className={styles.ringItem}></div>
+                            <div className={styles.ringItem}></div>
+                            <Link href="#" className={styles.cardLink}>
+                                <SlSocialVkontakte size={50} className={styles.icon} />
                             </Link>
                         </motion.div>
                     </div>
@@ -68,7 +79,7 @@ const Contacts = () => {
                   </form> */}
                 </motion.div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 
