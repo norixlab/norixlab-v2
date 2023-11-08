@@ -1,0 +1,33 @@
+.techology {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	color: #fff;
+	overflow: hidden;
+
+
+
+}
+
+.inner {
+	margin-bottom: 50px;
+}
+
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	gap: 50px;
+
+}
+
+.imageBox {}
+
+.textBox {
+	width: 700px;
+}

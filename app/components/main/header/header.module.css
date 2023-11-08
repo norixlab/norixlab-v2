@@ -83,7 +83,7 @@
         width: 100%;
         padding: 30px 50px;
         top: 65px;
-        right: -100%;
+        right: -110%;
         border: none;
         font-size: 20px;
         border-radius: 0;
@@ -92,7 +92,7 @@
         background: rgba(3, 0, 20, 0.9);
         box-shadow: 0 10px 15px -3px rgb(42 14 97 / 0.5), 0 4px 6px -4px rgb(3 0 20 / 0.09);
 
-        transition: all 1s ease-out;
+        transition: right .5s;
     }
 
     .active {

@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={play.className}>
                 <StarsCanvas />
+
                 {children}
             </body>
         </html>

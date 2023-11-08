@@ -85,28 +85,16 @@
 
 .img {
 	position: relative;
-	top: -20px;
-	animation: floatImage 4s infinite ease-in-out;
+	top: -15px;
+
 }
 
-@keyframes floatImage {
-	0% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(24px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
 
 @media(max-width:1050px) {
 	.img {
 		width: 400px;
 		height: auto;
+		top: 0;
 	}
 }
 

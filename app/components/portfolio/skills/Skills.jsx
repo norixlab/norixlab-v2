@@ -9,24 +9,28 @@ import Button from '../../button/Button';
 import styles from './skills.module.css';
 const Skills = () => {
     return (
-        <motion.section initial="hidden" whileInView="visible" className={styles.services} id="skills">
+        <motion.section
+            initial="hidden"
+            whileInView="visible"
+            className={styles.services}
+            id="skills">
             <div className={styles.container}>
                 <motion.div className={styles.inner}>
                     <motion.h2 variants={slideInFromTop(0.2, 2)} className={styles.title}>
-                        Our <span>Services</span>
+                        My <span>Skills</span>
                     </motion.h2>
 
                     <motion.div variants={slideInFromBottom(0.2, 2)} className={styles.wrapper}>
                         <div className={styles.servicesBox}>
                             <BiCodeAlt size={60} color="#0ef" />
                             {/* <i className='bx bx-code-alt'></i> */}
-                            <h3>Web Development</h3>
+                            <h3>HTML CSS JS</h3>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
                                 voluptas quam harum neque vel ratione. Iure distinctio aut itaque
                                 necessitatibus!
                             </p>
-                            <Button title="Read more" url="#" />
+                            <Button title="View Projects" url="#" />
                             {/* <a className="btn" href="#">
                               Read More
                           </a> */}
@@ -35,13 +39,13 @@ const Skills = () => {
                         <div className={styles.servicesBox}>
                             <GrReactjs size={60} color="#0ef" />
                             {/* <i className="bx bxl-react"></i> */}
-                            <h3>Graphic Design</h3>
+                            <h3>ReactJS NextJS</h3>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
                                 voluptas quam harum neque vel ratione. Iure distinctio aut itaque
                                 necessitatibus!
                             </p>
-                            <Button title="Read more" url="#" />
+                            <Button title="View Projects" url="#" />
                             {/* <a className="btn" href="#">
                               Read More
                           </a> */}
@@ -50,13 +54,13 @@ const Skills = () => {
                         <div className={styles.servicesBox}>
                             <FaWordpressSimple size={60} color="#0ef" />
                             {/* <i className="bx bxl-wordpress"></i> */}
-                            <h3>Digital Marketing</h3>
+                            <h3>WordPress</h3>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
                                 voluptas quam harum neque vel ratione. Iure distinctio aut itaque
                                 necessitatibus!
                             </p>
-                            <Button title="Read more" url="#" />
+                            <Button title="View Projects" url="#" />
                             {/* <a className="btn" href="#">
                               Read More
                           </a> */}

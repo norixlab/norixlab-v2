@@ -28,14 +28,10 @@ const Hero = () => {
         };
     }, []);
     return (
-        <motion.section initial="hidden"
-                        whileInView="visible"
-                         className={styles.home} id="home">
+        <motion.section initial="hidden" whileInView="visible" className={styles.home} id="home">
             <div className={styles.container}>
                 <div className={styles.inner}>
-                    <motion.div variants={slideInFromTop(0.2, 2)}
-                        className={styles.content}
-                        >
+                    <motion.div variants={slideInFromTop(0.2, 2)} className={styles.content}>
                         <motion.p variants={slideInFromRight(0.2, 2)}>Hello, It&apos;s Me</motion.p>
                         <motion.h1 variants={slideInFromLeft(0.2, 2)}>Sergey Taydakov</motion.h1>
                         <h3>
@@ -70,15 +66,16 @@ const Hero = () => {
 
                         <Button title="My Resume" url="#" />
                     </motion.div>
-                    <motion.div variants={slideInFromRight(0.3,2)}>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1, transition: { duration: 2, delay: 0.7 } }}>
                         <Image
                             className={styles.img}
-                            src="/assets/portfolio-me2.png"
+                            src="/assets/hero.png"
                             alt="My photo"
                             width={500}
                             height={600}
                             quality={75}
-                            
                         />
                     </motion.div>
                 </div>
